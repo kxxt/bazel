@@ -101,6 +101,12 @@ def embedded_jdk_repositories():
         url = "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-jdk_ppc64le_linux_hotspot_23.0.1_11.tar.gz",
     )
     http_file(
+        name = "openjdk_linux_riscv64_vanilla",
+        integrity = "sha256-Lxs+QB423oAzmN+5gYhh+fFMqK59tlDqCUarBI/v47k=",
+        downloaded_file_path = "adoptopenjdk-riscv64-vanilla.tar.gz",
+        url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jdk_riscv64_linux_hotspot_21.0.5_11.tar.gz",
+    )
+    http_file(
         name = "openjdk_macos_x86_64_vanilla",
         integrity = "sha256-Ha2a94Z+QAc367voEEMXGo8Lw92vcvvu9ilbPR2+cow=",
         downloaded_file_path = "zulu-macos-vanilla.tar.gz",
